@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dakshesh/static/css/main.b1f9ff51.css",
+    "main.js": "/dakshesh/static/js/main.99374395.js",
+    "index.html": "/dakshesh/index.html",
+    "main.b1f9ff51.css.map": "/dakshesh/static/css/main.b1f9ff51.css.map",
+    "main.99374395.js.map": "/dakshesh/static/js/main.99374395.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1f9ff51.css",
+    "static/js/main.99374395.js"
+  ]
+}
