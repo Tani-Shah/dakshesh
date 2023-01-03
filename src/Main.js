@@ -44,7 +44,8 @@ function Main() {
     'HDFC Bank': 'https://netbanking.hdfcbank.com/netbanking/',
     'IDFC Bank': 'https://my.idfcbank.com/start',
     'BOB': 'https://www.bobibanking.com/',
-    'ICICI Bank': 'https://infinity.icicibank.com/corp/'
+    'ICICI Bank': 'https://infinity.icicibank.com/corp/',
+    'BOB - UG': 'https://intl.bobibanking.com/intl/uganda/uganda.htm'
   }
 
   const shares ={
