@@ -40,7 +40,7 @@ function Main() {
   }
 
   const bank ={
-    'Axis Bank': 'https://www.axisbank.co.in/',
+    'Axis Bank': 'https://omni.axis.bank.in/axisretailbanking/',
     'HDFC Bank': 'https://netbanking.hdfcbank.com/netbanking/',
     'IDFC Bank': 'https://my.idfcbank.com/start',
     'BOB': 'https://www.bobibanking.com/',
