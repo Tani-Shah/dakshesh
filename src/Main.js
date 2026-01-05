@@ -2,95 +2,104 @@ import './Main.css';
 import DisplayCard from './components/DisplayCard';
 
 function Main() {
-
   const mail = {
-    'Gmail': 'https://mail.google.com/mail/',
-    'Yahoo': 'http://www.mail.yahoo.com/'
-  }
+    Gmail: 'https://mail.google.com/mail/',
+    Yahoo: 'http://www.mail.yahoo.com/',
+  };
 
-  const news ={
-    'Divya Bhaskar': 'http://www.divyabhaskar.co.in/',
-    'Gujarat Samachar': 'http://www.gujaratsamachar.com/'
-  }
-  
-  const mutualFunds ={
-    'Prudent Corp': 'https://www.prudentcorporate.com/ccd/index.aspx',
-    'FundBazar': 'https://www.fundzbazar.com/'
-  }
+  const shopping = {
+    Amazon: 'https://www.amazon.in/',
+    Flipkart: 'https://www.flipkart.com/viewcart?otracker=Cart_Icon_Click',
+  };
 
-  const shopping ={
-    'Amazon': 'https://www.amazon.in/',
-    'Flip Kart': 'https://www.flipkart.com/viewcart?otracker=Cart_Icon_Click',
-    'Snap Deal': 'http://www.snapdeal.com/',
-    'SOUQ': 'https://uae.souq.com/ae-en/auth_portal.php?action=index',
-    'Jumia': 'https://www.jumia.ug/'
-  }
-
-  const mobiles ={
+  const mobiles = {
     '91Mobiles': 'https://www.91mobiles.com/',
-    'GSMarena': 'http://www.gsmarena.com/'
-  }
+    GSMarena: 'http://www.gsmarena.com/',
+  };
 
-  const socialMedia ={
+  const naturalGas = {
+    'Pivotal Weather (GFS)': 'https://www.pivotalweather.com/model.php?m=gfs&p=sfct_anom-imp&rh=2025111412&fh=210&r=conus&dpdt=&mc=',
+    'EIA Report': 'https://ir.eia.gov/ngs/ngs.html',
+    'Baker Rig Count': 'https://rigcount.bakerhughes.com/na-rig-count',
+  };
+
+  const bank = {
+    'Axis Bank': 'https://omni.axis.bank.in/axisretailbanking/',
+    'HDFC Bank': 'https://now.hdfc.bank.in/',
+    'IDFC Bank': 'https://my.idfcbank.com/start',
+    BOB: 'https://bobibanking.bankofbaroda.bank.in/',
+    'ICICI Bank': 'https://retailnetbanking.icici.bank.in/login-page',
+    'BOB - UG': 'https://intl.bobibanking.com/intl/uganda/uganda.htm',
+  };
+
+  const markets = {
+    'Money Control': 'https://www.moneycontrol.com/',
+    'Trading View': 'https://www.tradingview.com/chart/HttygHgU/?symbol=NYMEX%3ANG1%21',
+    Dhan: 'https://tv.dhan.co/',
+    'Dhan Options Trader': 'https://options-trader.dhan.co/home',
+    IIFL: 'https://www.indiainfoline.com/',
+    Zerodha: 'https://kite.zerodha.com/',
+    'Angel One': 'https://www.angelone.in/',
+    Shoonya: 'https://shoonya.finvasia.com/',
+  };
+
+  const socialMedia = {
     'You Tube': 'https://www.youtube.com/',
     'Face Book': 'https://www.facebook.com/',
     'Linked In': 'https://www.linkedin.com/',
-    'Twitter': 'https://twitter.com/',
-    'Google': 'https://google.com/'
-  }
-
-  const bank ={
-    'Axis Bank': 'https://omni.axis.bank.in/axisretailbanking/',
-    'HDFC Bank': 'https://netbanking.hdfcbank.com/netbanking/',
-    'IDFC Bank': 'https://my.idfcbank.com/start',
-    'BOB': 'https://www.bobibanking.com/',
-    'ICICI Bank': 'https://infinity.icicibank.com/corp/',
-    'BOB - UG': 'https://intl.bobibanking.com/intl/uganda/uganda.htm'
-  }
-
-  const shares ={
-    'Money Control': 'https://www.moneycontrol.com/',
-    'Prudent': 'https://www.prudentcorporate.com/brokingt/Login.aspx',
-    'Market Hub': 'http://backoffice.markethubonline.com:8091/',
-    'Tradebull': 'https://www.tradebulls.in/',
-    'BSE': 'https://www.bseindia.com/',
-    'ERP': 'http://192.168.9.18:7003/ebiz/faces/ModulePage.jspx'
-  }
+    Twitter: 'https://twitter.com/',
+    Google: 'https://google.com/',
+  };
 
   return (
-    <div style={{height: '100vh', width: '100wh', display:'flex', alignItems: 'center', justifyContent: 'center', backgroundColor:'#333333'}}>
-      <div className="container" >
-        <div className="row" style={{marginTop: '2vh'}}>
+    <div className="page">
+      <div className="container">
+        {/* Header */}
+        <div className="row">
           <div className="col-12">
-            <h1 className="text-light bg-dark text-center" style={{height: '10vh', lineHeight: '10vh'}}>Dakshesh Shah - CA</h1>
+            <h1
+              className="text-light bg-dark text-center"
+              style={{ height: '64px', lineHeight: '64px' }}
+            >
+              Dakshesh Shah - CA
+            </h1>
           </div>
         </div>
-        <div className="row" style={{marginTop: '2vh'}}>
-          <div className="col-3">
-            <DisplayCard title='Mail' data={mail}/>
+
+        {/* Main layout */}
+        <div className="row g-2 mt-1 align-items-stretch">
+          {/* Markets column */}
+          <div className="col-12 col-lg-3 d-flex">
+            <DisplayCard title="Markets" data={markets} />
           </div>
-          <div className="col-3">
-            <DisplayCard title='News' data={news}/>
-          </div>
-          <div className="col-3">
-            <DisplayCard title='Mutual Funds' data={mutualFunds}/>
-          </div>
-          <div className="col-3">
-            <DisplayCard title='Mobiles' data={mobiles}/>
-          </div>
-        </div>
-        <div className="row" style={{marginTop: '2vh'}}>
-          <div className="col-3">
-            <DisplayCard title='Banks' data={bank}/>
-          </div>
-          <div className="col-3">
-            <DisplayCard title='Share Market' data={shares}/>
-          </div>
-          <div className="col-3">
-            <DisplayCard title='Shopping' data={shopping}/>
-          </div>
-          <div className="col-3">
-            <DisplayCard title='Social Media' data={socialMedia}/>
+
+          {/* Right side: 2 rows grid */}
+          <div className="col-12 col-lg-9">
+            <div className="row g-2">
+              <div className="col-12 col-md-6 col-lg-4 d-flex">
+                <DisplayCard title="Mail" data={mail} />
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4 d-flex">
+                <DisplayCard title="Natural Gas" data={naturalGas} />
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4 d-flex">
+                <DisplayCard title="Mobiles" data={mobiles} />
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4 d-flex">
+                <DisplayCard title="Shopping" data={shopping} />
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4 d-flex">
+                <DisplayCard title="Banks" data={bank} />
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4 d-flex">
+                <DisplayCard title="Social Media" data={socialMedia} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
