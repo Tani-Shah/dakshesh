@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dakshesh/static/css/main.b1f9ff51.css",
-    "main.js": "/dakshesh/static/js/main.881c390c.js",
+    "main.css": "/dakshesh/static/css/main.6282e6aa.css",
+    "main.js": "/dakshesh/static/js/main.17f7eb2e.js",
     "index.html": "/dakshesh/index.html",
-    "main.b1f9ff51.css.map": "/dakshesh/static/css/main.b1f9ff51.css.map",
-    "main.881c390c.js.map": "/dakshesh/static/js/main.881c390c.js.map"
+    "main.6282e6aa.css.map": "/dakshesh/static/css/main.6282e6aa.css.map",
+    "main.17f7eb2e.js.map": "/dakshesh/static/js/main.17f7eb2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1f9ff51.css",
-    "static/js/main.881c390c.js"
+    "static/css/main.6282e6aa.css",
+    "static/js/main.17f7eb2e.js"
   ]
 }
